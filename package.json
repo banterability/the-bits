@@ -1,0 +1,26 @@
+{
+  "name": "the-bits",
+  "version": "0.1.0",
+  "description": "Handy bits of frequenty-used JS.",
+  "main": "bits.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "assertive": "^2.0.0",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jeff Long",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banterability/the-bits.git"
+  },
+  "bugs": {
+    "url": "https://github.com/banterability/the-bits/issues"
+  },
+  "homepage": "https://github.com/banterability/the-bits#readme"
+}
