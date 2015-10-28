@@ -2,7 +2,7 @@ var assert = require('assertive');
 var humanize = require('../../modules/humanize');
 
 describe('humanize', function(){
-  describe('humanizeNumber', function(){
+  describe('#humanizeNumber', function(){
     it('returns a comma-delimited number', function(){
       assert.equal('105', humanize.humanizeNumber(105));
       assert.equal('1,050', humanize.humanizeNumber(1050));
@@ -17,7 +17,7 @@ describe('humanize', function(){
     });
   });
 
-  describe('pluralize', function(){
+  describe('#pluralize', function(){
     it('returns `true` for 0', function(){
       assert.truthy(humanize.pluralize(0));
     });
