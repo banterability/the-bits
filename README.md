@@ -6,6 +6,18 @@ The Bits
 
 Handy bits of frequenty-used JS.
 
+```
+Bits
+|_ dom
+   |_ find
+   |_ findAll
+|_ extend
+|_ humanize
+   |_ humanizeNumber
+   |_ pluralize
+|_ range
+```
+
 ## Build for browser
 
 ```bash
