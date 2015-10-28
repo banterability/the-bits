@@ -1,11 +1,12 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 window.Bits = {
   dom: require('./modules/dom'),
+  extend: require('./modules/extend'),
   humanize: require('./modules/humanize'),
   range: require('./modules/range')
 }
 
-},{"./modules/dom":2,"./modules/humanize":3,"./modules/range":4}],2:[function(require,module,exports){
+},{"./modules/dom":2,"./modules/extend":3,"./modules/humanize":4,"./modules/range":5}],2:[function(require,module,exports){
 module.exports = {
   find: function(selector, root){
     root = root || document;
@@ -19,6 +20,14 @@ module.exports = {
 }
 
 },{}],3:[function(require,module,exports){
+module.exports = function(destination, source){
+  for(var property in source){
+    destination[property] = source[property];
+  }
+  return destination;
+}
+
+},{}],4:[function(require,module,exports){
 module.exports = {
   humanizeNumber: function(num, options){
     // https://github.com/component/humanize-number
@@ -34,7 +43,7 @@ module.exports = {
   }
 }
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 // range
 //
 // Returns an array of integers between two values (inclusive)
