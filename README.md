@@ -18,7 +18,15 @@ Bits
 |_ range
 ```
 
-## Build for browser
+### Development
+
+#### Testing
+
+```bash
+$ npm test
+```
+
+#### Build for browser
 
 ```bash
 $ npm run-script build
