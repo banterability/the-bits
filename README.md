@@ -26,7 +26,6 @@ Behaves like `querySelectorAll`, but returns an iterable Array instead of a Node
 Bits.dom.findAll('img');
 Bits.dom.findAll('li', ulElement);
 ```
-```
 
 
 ### Development
