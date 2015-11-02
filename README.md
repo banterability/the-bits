@@ -6,17 +6,28 @@ The Bits
 
 Handy bits of frequenty-used JS.
 
+
+### The Bits
+
+#### `dom.find(selector: string, root?: element)`
+
+Wrapper around `querySelector`. Takes an optional `root` argument that scopes the search to another element.
+
+```javascript
+Bits.dom.find('div');
+Bits.dom.find('h1', sectionElement);
 ```
-Bits
-|_ dom
-   |_ find
-   |_ findAll
-|_ extend
-|_ humanize
-   |_ commaize
-   |_ pluralize
-|_ range
+
+#### `dom.findAll(selector: string, root?: element)`
+
+Behaves like `querySelectorAll`, but returns an iterable Array instead of a NodeList. Takes an optional `root` argument that scopes the search to another element.
+
+```javascript
+Bits.dom.findAll('img');
+Bits.dom.findAll('li', ulElement);
 ```
+```
+
 
 ### Development
 
@@ -26,7 +37,7 @@ Bits
 $ npm test
 ```
 
-#### Build for browser
+#### Packaging for browser use
 
 ```bash
 $ npm run-script build
