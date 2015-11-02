@@ -13,7 +13,7 @@ Bits
    |_ findAll
 |_ extend
 |_ humanize
-   |_ humanizeNumber
+   |_ commaize
    |_ pluralize
 |_ range
 ```

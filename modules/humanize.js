@@ -1,5 +1,5 @@
 module.exports = {
-  humanizeNumber: function(num, options){
+  commaize: function(num, options){
     // https://github.com/component/humanize-number
     options = options || {};
     var delimiter = options.delimiter || ',';

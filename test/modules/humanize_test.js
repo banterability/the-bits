@@ -2,18 +2,18 @@ var assert = require('assertive');
 var humanize = require('../../modules/humanize');
 
 describe('humanize', function(){
-  describe('#humanizeNumber', function(){
+  describe('#commaize', function(){
     it('returns a comma-delimited number', function(){
-      assert.equal('105', humanize.humanizeNumber(105));
-      assert.equal('1,050', humanize.humanizeNumber(1050));
-      assert.equal('10,500', humanize.humanizeNumber(10500));
-      assert.equal('105,000', humanize.humanizeNumber(105000));
-      assert.equal('1,050,000', humanize.humanizeNumber(1050000));
+      assert.equal('105', humanize.commaize(105));
+      assert.equal('1,050', humanize.commaize(1050));
+      assert.equal('10,500', humanize.commaize(10500));
+      assert.equal('105,000', humanize.commaize(105000));
+      assert.equal('1,050,000', humanize.commaize(1050000));
     });
 
     it('retains decimal values', function(){
-      assert.equal('105.99', humanize.humanizeNumber(105.99));
-      assert.equal('1,050.50', humanize.humanizeNumber('1050.50'));
+      assert.equal('105.99', humanize.commaize(105.99));
+      assert.equal('1,050.50', humanize.commaize('1050.50'));
     });
   });
 

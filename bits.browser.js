@@ -29,7 +29,7 @@ module.exports = function(destination, source){
 
 },{}],4:[function(require,module,exports){
 module.exports = {
-  humanizeNumber: function(num, options){
+  commaize: function(num, options){
     // https://github.com/component/humanize-number
     options = options || {};
     var delimiter = options.delimiter || ',';
