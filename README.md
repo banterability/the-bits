@@ -9,6 +9,17 @@ Handy bits of frequenty-used JS.
 
 ### The Bits
 
+#### `datetime.padZeros`
+
+Convert a number into a string, padding single-digit values with a zero. Useful for times (8:05pm);
+
+```javascript
+Bits.datetime.padZeros(1);
+// --> '01'
+Bits.datetime.padZeros(15);
+// --> '15'
+```
+
 #### `dom.find(selector: string, root?: element)`
 
 Wrapper around `querySelector`. Takes an optional `root` argument that scopes the search to another element.
