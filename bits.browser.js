@@ -50,7 +50,7 @@ module.exports = {
     num[0] = num[0].replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1' + delimiter);
     return num.join(separator);
   },
-  pluralize: function(count){
+  isPlural: function(count){
     return count === 1 ? false : true;
   }
 }

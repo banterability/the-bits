@@ -55,6 +55,18 @@ Bits.humanize.commaize(10508.99);
 // -> '10,508.99'
 ```
 
+#### `humanize.isPlural`
+
+Returns a boolean of whether or not a value should be described as a plural.
+
+```javascript
+Bits.humanize.isPlural(0);
+// -> true
+Bits.humanize.isPlural(1);
+// -> false
+Bits.humanize.isPlural(2);
+// -> true
+```
 
 ### Development
 

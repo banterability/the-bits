@@ -17,18 +17,18 @@ describe('humanize', function(){
     });
   });
 
-  describe('#pluralize', function(){
+  describe('#isPlural', function(){
     it('returns `true` for 0', function(){
-      assert.truthy(humanize.pluralize(0));
+      assert.truthy(humanize.isPlural(0));
     });
 
     it('returns `false` for 1', function(){
-      assert.falsey(humanize.pluralize(1));
+      assert.falsey(humanize.isPlural(1));
     });
 
     it('returns `true` for 2 or more', function(){
-      assert.truthy(humanize.pluralize(2));
-      assert.truthy(humanize.pluralize(20));
+      assert.truthy(humanize.isPlural(2));
+      assert.truthy(humanize.isPlural(20));
     });
   });
 });
