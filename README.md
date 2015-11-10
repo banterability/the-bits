@@ -9,7 +9,7 @@ Handy bits of frequenty-used JS.
 
 ### The Bits
 
-#### `datetime.padZeros`
+#### `datetime.padZeros(value: number)`
 
 Converts a number into a string, padding single-digit values with a zero. Useful for times (8:05 p.m.)
 
@@ -42,7 +42,7 @@ Bits.dom.findAll('li', ulElement);
 // -> Array[<li>, <li>, <li>]
 ```
 
-#### `humanize.commaize`
+#### `humanize.commaize(value: number)`
 
 Converts a number into a string, adding commas after every three digits as necessary. Preserves decimal values.
 
@@ -55,7 +55,7 @@ Bits.humanize.commaize(10508.99);
 // -> '10,508.99'
 ```
 
-#### `humanize.isPlural`
+#### `humanize.isPlural(value: number)`
 
 Returns a boolean of whether or not a value should be described as a plural.
 
