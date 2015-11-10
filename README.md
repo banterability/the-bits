@@ -42,6 +42,19 @@ Bits.dom.findAll('li', ulElement);
 // -> Array[<li>, <li>, <li>]
 ```
 
+#### `humanize.commaize`
+
+Converts a number into a string, adding commas after every three digits as necessary. Preserves decimal values.
+
+```javascript
+Bits.humanize.commaize(105);
+// -> '105'
+Bits.humanize.commaize(1050);
+// -> '1,050'
+Bits.humanize.commaize(10508.99);
+// -> '10,508.99'
+```
+
 
 ### Development
 
