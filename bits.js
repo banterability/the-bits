@@ -1,5 +1,4 @@
 window.Bits = {
-  datetime: require('./modules/datetime'),
   dom: require('./modules/dom'),
   extend: require('./modules/extend'),
   humanize: require('./modules/humanize'),

@@ -31,4 +31,15 @@ describe('humanize', function(){
       assert.truthy(humanize.isPlural(20));
     });
   });
+
+  describe('#padZeros', function(){
+    it('returns a zero-padded string for single digit numbers', function(){
+      assert.equal('00', humanize.padZeros(0));
+      assert.equal('09', humanize.padZeros(9));
+    });
+    it('returns an unpadded string for two-digit numbers', function(){
+      assert.equal('10', humanize.padZeros(10));
+      assert.equal('99', humanize.padZeros(99));
+    });
+  });
 });
