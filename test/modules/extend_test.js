@@ -1,5 +1,5 @@
 var assert = require('assertive');
-var extend = require('../../modules/extend');
+var extend = require('../../bits').extend;
 
 describe('extend', function(){
   it('extends the destination object with the attributes of the source object', function(){

@@ -1,5 +1,5 @@
 var assert = require('assertive');
-var humanize = require('../../modules/humanize');
+var humanize = require('../../bits').humanize;
 
 describe('humanize', function(){
   describe('#commaize', function(){

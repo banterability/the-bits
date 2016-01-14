@@ -1,5 +1,5 @@
 var assert = require('assertive');
-var range = require('../../modules/range');
+var range = require('../../bits').range;
 
 describe('range', function(){
   it('returns an array of integers between two values (inclusive)', function(){

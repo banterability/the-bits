@@ -1,6 +1,6 @@
 var assert = require('assertive');
 var bond = require('bondjs');
-var dom = require('../../modules/dom');
+var dom = require('../../bits').dom;
 
 describe('dom', function(){
   beforeEach(function(){
