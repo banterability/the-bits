@@ -92,3 +92,5 @@ $ npm test
 ```bash
 $ npm run-script build
 ```
+
+The browser-friendly script is available at `bits.brower.js`.

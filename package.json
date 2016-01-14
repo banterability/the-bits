@@ -13,7 +13,7 @@
     "mocha": "^2.2.5"
   },
   "scripts": {
-    "build": "browserify bits.js -o bits.browser.js",
+    "build": "browserify bits.js --standalone Bits -o bits.browser.js",
     "test": "mocha"
   },
   "author": "Jeff Long",
