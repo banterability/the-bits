@@ -68,6 +68,17 @@ Bits.humanize.isPlural(2);
 // -> true
 ```
 
+#### `range(from: number, to: number)`
+
+Returns an array of integers between two values (inclusive).
+
+Description TK
+
+```javascript
+Bits.range(1, 5);
+// -> [1, 2, 3, 4, 5]
+```
+
 ### Development
 
 #### Testing
