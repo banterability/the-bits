@@ -31,9 +31,20 @@ Bits.dom.findAll('li', ulElement);
 // -> Array[<li>, <li>, <li>]
 ```
 
+#### `extend(tk)`
+
+Extends the destination object with the attributes of the source object. If a key exists in both, the source object will overwrite the destination.
+
+Description TK
+
+```javascript
+Bits.extend({a: 1}, {b: 2});
+// -> {a: 1, b: 2}
+```
+
 #### `humanize.commaize(value: number)`
 
-Converts a number into a string, adding commas after every three digits as necessary. Preserves decimal values.
+Converts a number into a string, adding commas after every three digits as necessary. Preserves decimal values, if present.
 
 ```javascript
 Bits.humanize.commaize(105);
