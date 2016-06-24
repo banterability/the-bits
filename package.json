@@ -1,7 +1,7 @@
 {
   "name": "the-bits",
   "version": "0.1.0",
-  "description": "Handy bits of frequenty-used JS.",
+  "description": "Occasionally useful snippets of JS.",
   "main": "bits.js",
   "directories": {
     "test": "test"

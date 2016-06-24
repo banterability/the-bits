@@ -4,10 +4,10 @@ The Bits
 
 ![The bits! The bits!](https://s3.amazonaws.com/f.cl.ly/items/120u3h1W031T21411n1l/the-bits-cap.gif)
 
-Handy bits of frequenty-used JS.
+Occasionally useful snippets of JS.
 
 
-### The Bits
+### Meet The Bits
 
 #### `color.contrastingColor(comparisonColor: array, darkContrastingOption: any, lightContrastingOption: any)`
 
@@ -112,7 +112,7 @@ $ npm test
 #### Packaging for browser use
 
 ```bash
-$ npm run-script build
+$ npm run build
 ```
 
-The browser-friendly script is available at `bits.brower.js`.
+The browser-friendly script is available at `bits.browser.js`.
