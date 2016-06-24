@@ -9,6 +9,17 @@ Handy bits of frequenty-used JS.
 
 ### The Bits
 
+#### `color.contrastingColor(comparisonColor: array, darkContrastingOption: any, lightContrastingOption: any)`
+
+Given a comparison color (as an array of `[r, g, b]` values), determine whether a dark or light color would be more visible. The `darkContrastingOption` and `lightContrastingOption` arguments are not parsed and are returned as passed, so they can be in any format useful to you.
+
+```javascript
+Bits.color.contrastingColor([255, 255, 255], 'black', 'white');
+// -> 'black'
+Bits.color.contrastingColor([0, 0, 0], '#000', '#fff');
+// -> '#fff'
+```
+
 #### `dom.find(selector: string, root?: element)`
 
 Wrapper around `querySelector`. Takes an optional `root` argument that scopes the search to another element.

@@ -1,12 +1,25 @@
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Bits = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports = {
+  color: require('./modules/color'),
   dom: require('./modules/dom'),
   extend: require('./modules/extend'),
   humanize: require('./modules/humanize'),
   range: require('./modules/range')
 };
 
-},{"./modules/dom":2,"./modules/extend":3,"./modules/humanize":4,"./modules/range":5}],2:[function(require,module,exports){
+},{"./modules/color":2,"./modules/dom":3,"./modules/extend":4,"./modules/humanize":5,"./modules/range":6}],2:[function(require,module,exports){
+module.exports = {
+  contrastingColor: function(comparisonColor, darkContrastingOption, lightContrastingOption){
+    var r = comparisonColor[0],
+        g = comparisonColor[1],
+        b = comparisonColor[2];
+
+    var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+    return (yiq >= 128) ? darkContrastingOption : lightContrastingOption;
+  }
+}
+
+},{}],3:[function(require,module,exports){
 module.exports = {
   find: function(selector, root){
     root = root || document;
@@ -19,7 +32,7 @@ module.exports = {
   }
 }
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 module.exports = function(destination, source){
   for(var property in source){
     destination[property] = source[property];
@@ -27,7 +40,7 @@ module.exports = function(destination, source){
   return destination;
 }
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 module.exports = {
   commaize: function(num, options){
     // https://github.com/component/humanize-number
@@ -52,7 +65,7 @@ module.exports = {
   }
 }
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 module.exports = function(from, to){
   var range = [];
 
